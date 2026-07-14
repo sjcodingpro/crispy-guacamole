@@ -88,7 +88,7 @@ button:focus-visible {
   margin: 0 0 1.25rem;
 }
 .fig-mark {
-  display: inline-block;
+  display: inline-flex;
   width: 0.85em;
   height: 0.85em;
   border-radius: 50%;
@@ -98,7 +98,7 @@ button:focus-visible {
 
 /* ---------- Buttons ---------- */
 .button {
-  display: inline-block;
+  display: inline-flex;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.95rem;
@@ -256,13 +256,16 @@ button:focus-visible {
   align-items: center;
 }
 .about__portrait {
-  flex: 1 1 18rem;
-  max-width: 22rem;
+  flex: 1 1 24rem;
+  max-width: 32rem;
 }
-.about__portrait svg { width: 100%; height: auto; }
-.portrait-bg { fill: var(--color-canvas-deep); }
-.portrait-body { fill: var(--color-skin); }
-.portrait-head { fill: var(--color-flesh); }
+.about__portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
 .about__content {
   flex: 2 1 24rem;
 }
@@ -308,6 +311,41 @@ button:focus-visible {
   max-width: 36rem;
 }
 .timeline__body cite { font-style: italic; }
+
+/* ---------- Selected works (Flexbox) ---------- */
+.works { margin-top: 2.5rem; }
+.works__heading {
+  color: var(--color-cream);
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.work-card {
+  flex: 1 1 14rem;
+  max-width: 18rem;
+}
+.work-card__art {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+.work-card__title {
+  color: var(--color-cream);
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+}
+.work-card__meta {
+  color: rgba(248, 243, 231, 0.65);
+  font-size: 0.9rem;
+  margin: 0;
+}
 
 /* ---------- Upcoming shows (Flexbox) ---------- */
 .shows { background: var(--color-canvas); }
@@ -374,7 +412,7 @@ button:focus-visible {
   border-top: 1px solid rgba(248, 243, 231, 0.14);
 }
 .back-to-top {
-  display: inline-block;
+  display: inline-flex;
   margin-top: 1rem;
   font-size: 0.9rem;
   text-decoration: none;

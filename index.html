@@ -34,12 +34,29 @@
         "jobTitle": "Painter and Printmaker",
         "description": "Contemporary painter and printmaker working in oil, gouache, and monotype from a converted fig orchard studio outside Faro, Portugal.",
         "url": "https://www.rawfigs.art/",
+        "image": "rawfigs-artistimg.png",
         "sameAs": [
           "https://www.instagram.com/rawfigs.studio"
         ]
       },
       {
-        "@type": "ExhibitionEvent",
+        "@type": "CreativeWork",
+        "name": "Windfall (fig study no. 4)",
+        "creator": { "@id": "https://www.rawfigs.art/#ana-duarte" },
+        "dateCreated": "2026-06",
+        "image": "windfall-rawfigs-aritst.png",
+        "description": "Oil on paper still life of a whole fig beside a fig cut in half, showing the flesh."
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Fig, Split",
+        "creator": { "@id": "https://www.rawfigs.art/#ana-duarte" },
+        "dateCreated": "2023-08",
+        "image": "gouche-rawfigsimg.png",
+        "description": "Gouache still life of a whole fig beside a fig cut in half, showing the flesh, on textured paper."
+      },
+      {
+        "@type": "Event",
         "name": "Windfall — Group Show",
         "startDate": "2026-09-12",
         "endDate": "2026-10-24",
@@ -51,7 +68,7 @@
         "performer": { "@id": "https://www.rawfigs.art/#ana-duarte" }
       },
       {
-        "@type": "ExhibitionEvent",
+        "@type": "Event",
         "name": "Skin & Stone — Solo Presentation",
         "startDate": "2026-11-06",
         "endDate": "2026-11-09",
@@ -63,7 +80,7 @@
         "performer": { "@id": "https://www.rawfigs.art/#ana-duarte" }
       },
       {
-        "@type": "ExhibitionEvent",
+        "@type": "Event",
         "name": "Orchard Studies — Print Room Residency",
         "startDate": "2027-01-15",
         "endDate": "2027-02-20",
@@ -145,12 +162,8 @@
     <!-- ABOUT -->
     <section id="about" class="about" aria-labelledby="about-heading">
       <div class="about__inner">
-        <div class="about__portrait" aria-hidden="true">
-          <svg viewBox="0 0 300 360" role="presentation" focusable="false">
-            <rect x="0" y="0" width="300" height="360" class="portrait-bg"></rect>
-            <path d="M60 340 C 60 220, 70 150, 150 150 C 230 150, 240 220, 240 340 Z" class="portrait-body"></path>
-            <circle cx="150" cy="110" r="58" class="portrait-head"></circle>
-          </svg>
+        <div class="about__portrait">
+          <img src="rawfigs-artistimg.png" alt="Ana Duarte seated at her studio table, chin resting on her hand, surrounded by paintbrushes and paint jars. Behind her hang framed sketches and a coastal watercolor, and a large in-progress oil painting of a seated woman rests on an easel." width="1402" height="1122" loading="lazy">
         </div>
 
         <div class="about__content">
@@ -161,8 +174,8 @@
             gouache, and it still shows: her canvases are built up in flat,
             deliberate layers, the way a plate is inked before a press run.
             She paints what's close by — fruit split open on the studio
-            table, laundry on the line, the particular green of a fig leaf
-            in late August.
+            table, a fig halved on the cutting board, the particular green
+            of a fig leaf in late August.
           </p>
           <p>
             The work stays deliberately unfinished at the edges. Raw linen
@@ -205,7 +218,7 @@
           <li class="timeline__item">
             <article class="timeline__body">
               <span class="timeline__year">2023</span>
-              <h3>First solo presentation, Still Warm</h3>
+              <h3>First solo presentation, Fig, Split</h3>
               <p>Studio open days, Faro. Twelve still-life paintings shown
                 in the working studio, unframed.</p>
             </article>
@@ -219,6 +232,26 @@
             </article>
           </li>
         </ol>
+
+        <div class="works">
+          <h3 class="works__heading">Selected works</h3>
+          <ul class="works-list">
+            <li>
+              <article class="work-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <img class="work-card__art" itemprop="image" src="windfall-rawfigs-aritst.png" alt="Oil painting of a whole dark purple fig beside a fig cut in half, revealing its red and pink flesh, against a light neutral background" width="772" height="484" loading="lazy">
+                <p class="work-card__title" itemprop="name">Windfall (fig study no. 4)</p>
+                <p class="work-card__meta" itemprop="description">Oil on paper, 2026</p>
+              </article>
+            </li>
+            <li>
+              <article class="work-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <img class="work-card__art" itemprop="image" src="gouche-rawfigsimg.png" alt="Gouache painting of a whole dark purple fig beside a fig cut in half, revealing its red and pink flesh, on warm cream-toned textured paper" width="804" height="488" loading="lazy">
+                <p class="work-card__title" itemprop="name">Fig, Split</p>
+                <p class="work-card__meta" itemprop="description">Gouache on paper, 2023</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
